@@ -1,15 +1,15 @@
-let squares = document.querySelectorAll(".sqaure")
+let squares = document.querySelectorAll(".sqaure");
 
-function switchcolors(e){
+function switchcolors(event){
 	squares.forEach(square=>{
-		square.style.background = (sqaure === event.target) ? '#E6E6FA':'6F4E37';
+		square.style.backgroundColor = (sqaure === event.target) ? '#E6E6FA':'#6F4E37';
 	});
 	
 }
 
 function resetcolor(e){
 	squares.forEach(sqaure=>{
-		sqaure.style.backgroundcolor = '#E6E6FA';
+		sqaure.style.backgroundColor = '#E6E6FA';
 	});
 }
 
