@@ -2,12 +2,12 @@ let squares = document.querySelectorAll(".sqaure");
 
 function switchcolors(event){
 	squares.forEach(square=>{
-		square.style.backgroundColor = (sqaure === event.target) ? '#E6E6FA':'#6F4E37';
+		square.style.backgroundColor = (square === event.target) ? '#E6E6FA':'#6F4E37';
 	});
 	
 }
 
-function resetcolor(e){
+function resetcolor(){
 	squares.forEach(sqaure=>{
 		sqaure.style.backgroundColor = '#E6E6FA';
 	});
@@ -15,6 +15,6 @@ function resetcolor(e){
 
 squares.forEach(square=>{
 	square.addEventListener("mouseover",switchcolors);
-	square.addEventListener("mouseout",resetcolors);
+	square.addEventListener("mouseout",resetcolor);
 	
 })
