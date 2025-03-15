@@ -2,7 +2,7 @@ let squares = document.querySelectorAll(".sqaure")
 
 function switchcolors(e){
 	squares.forEach(square=>{
-		square.style.background = (sqaure == event.target) ? '#E6E6FA':'6F4E37';
+		square.style.background = (sqaure === event.target) ? '#E6E6FA':'6F4E37';
 	});
 	
 }
