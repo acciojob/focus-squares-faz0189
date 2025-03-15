@@ -1,4 +1,4 @@
-let squares = document.querySelectorAll(".sqaure");
+let squares = document.querySelectorAll(".square");
 
 function switchcolors(event){
 	squares.forEach(square=>{
@@ -8,7 +8,7 @@ function switchcolors(event){
 }
 
 function resetcolor(){
-	squares.forEach(sqaure=>{
+	squares.forEach(square=>{
 		sqaure.style.backgroundColor = '#E6E6FA';
 	});
 }
