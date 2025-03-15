@@ -1,22 +1,20 @@
-// Select all squares
-const squares = document.querySelectorAll(".square");
+let squares = document.querySelectorAll(".sqaure")
 
-// Function to change colors on hover
-function changeColors(event) {
-    squares.forEach(square => {
-        square.style.backgroundColor = (square === event.target) ? "#E6E6FA" : "#6F4E37";
-    });
+function switchcolors(e){
+	squares.forEach(square=>{
+		square.style.background = (sqaure == event.target) ? '#E6E6FA':'6F4E37'
+	});
+	
 }
 
-// Function to reset colors
-function resetColors() {
-    squares.forEach(square => {
-        square.style.backgroundColor = "#E6E6FA";
-    });
+function resetcolor(e){
+	squares.forEach(sqaure=>{
+		sqaure.style.backgroundcolor = '#E6E6FA';
+	})
 }
 
-// Attach event listeners to each square
-squares.forEach(square => {
-    square.addEventListener("mouseover", changeColors);
-    square.addEventListener("mouseout", resetColors);
-});
+squares.forEach(square=>{
+	square.addEventListener("mouseover"switchcolors)
+	square.addEventListener("mouseout"resetcolors)
+	
+})
