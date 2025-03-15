@@ -9,7 +9,7 @@ function switchcolors(event){
 
 function resetcolor(){
 	squares.forEach(square=>{
-		sqaure.style.backgroundColor = '#E6E6FA';
+		square.style.backgroundColor = '#E6E6FA';
 	});
 }
 
